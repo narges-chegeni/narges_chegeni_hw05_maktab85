@@ -6,5 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hw5-2</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      "use strict";
+      let stepCounter = {
+        counter: 0,
+        increase: function () {
+          this.counter++;
+          console.log(this.counter);
+          return this;
+        },
+        decrease: function () {
+          this.counter--;
+          console.log(this.counter);
+          return this;
+        },
+        reset: function () {
+          this.counter = 0;
+          console.log(this.counter);
+          return this;
+        },
+        read: function () {
+          console.log(this.counter, "steps");
+          return this;
+        },
+      };
+      stepCounter.increase().decrease().increase().reset().read();
+    </script>
+  </body>
 </html>
