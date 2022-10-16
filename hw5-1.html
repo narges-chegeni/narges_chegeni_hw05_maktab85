@@ -6,5 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hw5-1</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      "use strict";
+      let user = {
+        name: "john",
+        age: 30,
+        sayhello: function () {
+          console.log("hello", this.name);
+        },
+      };
+      user.sayhello();
+    </script>
+  </body>
 </html>
