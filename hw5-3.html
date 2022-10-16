@@ -6,5 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hw5-3</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      "use strict";
+      let data = [
+        {
+          name: "narges",
+          age: 25,
+        },
+        {
+          name: "zahra",
+          age: 21,
+        },
+        {
+          name: "fatemeh",
+          age: 18,
+        },
+        {
+          name: "maryam",
+          age: 16,
+        },
+        {
+          name: "minoo",
+          age: 27,
+        },
+        {
+          name: "maedeh",
+          age: 23,
+        },
+      ];
+      function ageSorter(arr) {
+        arr.sort((a, b) => {
+          if (a.age > b.age) {
+            return 1;
+          } else {
+            return -1;
+          }
+        });
+        return arr;
+      }
+      console.log(ageSorter(data));
+    </script>
+  </body>
 </html>
