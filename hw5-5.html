@@ -6,5 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hw5-5</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      let ask = (question, yes, no) => (confirm(question) ? yes() : no());
+
+      ask(
+        "Do you agree ?",
+        function () {
+          alert("You agreed.");
+        },
+        function () {
+          alert("You canceled the execution.");
+        }
+      );
+    </script>
+  </body>
 </html>
