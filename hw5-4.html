@@ -6,5 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hw5-4</title>
   </head>
-  <body></body>
+  <body>
+    <div id="notification"></div>
+    <script>
+      "use strict";
+      function data() {
+        this.top = Number(prompt("enter margin top in px:"));
+        this.left = Number(prompt("enter margin left in px:"));
+        this.html = prompt("enter your notification text:");
+        this.className = prompt("enter a class name for div element:");
+      }
+
+      let data1 = new data();
+      showNotification(data1);
+
+      function showNotification(obj) {
+        let notif = document.getElementById("notification");
+        notif.innerHTML = obj.html;
+        notif.style.marginTop = `${obj.top}px`;
+        console.log(`${obj.top}px`);
+        notif.style.marginLeft = `${obj.left}px`;
+        console.log(`${obj.left}px`);
+        if (obj.className !== "") {
+          notif.className = obj.className;
+        }
+      }
+    </script>
+  </body>
 </html>
