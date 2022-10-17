@@ -6,6 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hw5-6</title>
     <link href="hw5-6.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body></body>
+  <body>
+    <div id="container">
+      <header>
+        <div id="circles">
+          <i class="fa fa-circle circle" style="color: red"></i>
+          <i class="fa fa-circle circle" style="color: rgb(188, 168, 21)"></i>
+          <i class="fa fa-circle circle" style="color: green"></i>
+        </div>
+        <div id="inputdiv">
+          <div></div>
+          <div id="inputcontent">
+            <i class="fa fa-lock lock"></i>
+            <input value="google.com" type="url" />
+          </div>
+          <i class="fa fa-repeat repeat"></i>
+        </div>
+        <div id="plus"><b>+</b></div>
+      </header>
+      <div id="page">
+        <form>
+          <img id="logo" src="mountain.jpg" />
+          <div id="logIn"><b>LOG IN</b></div>
+          <div id="form-inputs">
+            <div>
+              <i class="fa fa-user icon"></i>
+              <input class="form-field" type="text" value="username" />
+            </div>
+            <div>
+              <i class="fa fa-lock icon"></i>
+              <input class="form-field" type="text" value="password" />
+            </div>
+            <div id="rememberMe">
+              <i class="fa fa-square" id="check"></i>
+              <div id="remeberlabel">remember me</div>
+            </div>
+          </div>
+          <button id="loginButton">Login</button>
+          <footer>Forgot password?</footer>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
